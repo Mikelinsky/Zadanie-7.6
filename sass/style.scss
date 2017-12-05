@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+.text:before,
+.text:after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+body {
+	margin: 0;
+	background-color: #a9a7a5;
+}
+.container {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+header {
+	background-color: #4c3e39;
+	.photo {
+		background-image: url("http://www.avogueintention.com/wp-content/uploads/2014/11/6ef.jpg");
+		height: 45vh;
+		background-size: cover;
+		background-position: center;
+		margin: 0 auto;
+		
+	}
+}
+
+main {
+
+	> div {
+		text-align: center;
+	}
+	.text {					/*grid*/
+		text-align: left;
+		margin: 0 130px;
+		.col {
+			display: inline-block;
+			width: 50%;
+			float: left;
+			padding: 0 30px;
+		}
+	}
+}
+footer {
+	text-align: center;
+	background-color: #4c3e39;
+	margin-top: 20px;
+	div {
+		padding: 15px 0;
+		a {
+			text-decoration: none;
+			color: #000000;
+			cursor: pointer;
+			&:hover {
+				color: #f6ee62;
+			}
+		}
+	}
+}
+.test {
+	display: flex;
+	flex-wrap: wrap;
+}
+.test2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.test3 {
+	display: flex;
+	flex-wrap: wrap;
+}
